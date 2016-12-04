@@ -3,6 +3,7 @@ SimpleBattleshipRails::Application.routes.draw do
   get "static_pages/home"
 
   get '/game/:id', to: 'game#show'
+  put '/game/:id/:cell', to: 'game#update'
   delete '/game/:id', to: 'game#destroy'
   # get "game/create"
   # get "game/update"

@@ -8,8 +8,16 @@ class Game < ActiveRecord::Base
 
   def reset
     self.update(
-      my_board: EmptyBoardGenerator.generate,
+      my_board: sample_map,
       opponent_board: EmptyBoardGenerator.generate
     )
+  end
+
+  def sample_map
+    map = EmptyBoardGenerator.generate
+    BoardsGenerator.sample_board.each do |cell|
+      map[cell] = SHIP
+    end
+    map
   end
 end

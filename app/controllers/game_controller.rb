@@ -3,6 +3,7 @@ class GameController < ApplicationController
   end
 
   def update
+    HitsHandler.new(params['id'], params['cell']).update_players_boards
   end
 
   def show
