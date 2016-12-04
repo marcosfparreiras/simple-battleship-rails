@@ -1,6 +1,17 @@
 SimpleBattleshipRails::Application.routes.draw do
   root "static_pages#home"
   get "static_pages/home"
+
+  get '/game/:id', to: 'game#show'
+  delete '/game/:id', to: 'game#destroy'
+  # get "game/create"
+  # get "game/update"
+  # get "game/show"
+  # get "game/destroy"
+
+  # delete '/game/:id' to
+
+  # resource :game
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

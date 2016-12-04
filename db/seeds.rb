@@ -5,3 +5,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+Game.create(my_board: Array.new(100, 0), opponent_board: Array.new(100, 0))
+Game.create(my_board: Array.new(100, 0), opponent_board: Array.new(100, 0))

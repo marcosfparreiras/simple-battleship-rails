@@ -35,6 +35,11 @@ end
 group :development, :test do
   gem 'sqlite3', '1.3.12'
   gem 'byebug',  '9.0.0', platform: :mri
+  # gem 'rspec', '~> 3.4'
+  gem 'rspec-rails', '2.13.1'
+  gem 'test-unit'
+  gem 'minitest'
+  gem "spork-rails", "~> 4.0.0"
 end
 
 
